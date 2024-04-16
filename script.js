@@ -1,16 +1,10 @@
 function minDate(dates) {
-  //write you code here
-	const dateObjects = dates.map(dateString => new Date(dateString));
-    const minDate = new Date(Math.min.apply(null, dateObjects));
-    const formattedMinDate = minDate.toISOString().slice(0,10).replace(/-/g,"/");
+  const dateObjects = dates.map(dateString => new Date(dateString));
+  const minDate = new Date(Math.min.apply(null, dateObjects));
+  const formattedMinDate = minDate.toISOString().slice(0,10).replace(/-/g,"/");
     
-    return formattedMinDate;
+  return formattedMinDate;
 }
-
-	
-}
-
-// Do not change the code
 
 var dates = [
   "2023/03/01",
